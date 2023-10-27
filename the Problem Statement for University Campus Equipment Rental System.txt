@@ -1,0 +1,34 @@
+University Campus Equipment Rental System
+
+The University's Equipment Rental Department (ERD) is updating its equipment record-keeping operations. The department manages a network of equipment rental stations at three different campuses of the university.
+
+The ERD currently has an electronic database that contains information such as equipment name, type, manufacturer, description, and location of all equipment in the rental inventory. However, all student member information and equipment check-in and check-out information is still kept on paper at each rental station.
+
+This system was previously feasible when the university had fewer students. But with the increasing student population, the ERD now needs to digitalize the entire rental process.
+
+The new system will have a web-based application to allow the ERD staff to check-in and check-out equipment. The system should also maintain information about each manufacturer, including their head-office address and main contact number, to enable the department to order new equipment or replacement parts. All equipment is categorized under a type (such as Audio, Visual, Lab Equipment, Sports, Computers, etc.) to allow students to find items pertaining to their needs. Each equipment piece has a unique equipment ID. The new system should allow registered university members to search the electronic database to find the equipment ID of the desired item.
+
+The system can be hosted on a server within the university or on a cloud service. Both staff and students will access the system through a web-browser interface. However, only ERD staff can check-in and check-out equipment.
+
+Information on all university members using the system will be stored, including their university IDs, addresses, contact numbers, and any payment methods (for equipment damages or late fees). Only valid university students, faculty, or staff can register to use the service, requiring a valid university-issued identification card for registration.
+
+Standard members (students) can rent equipment for a maximum of 7 days. If returned later, they pay a late fee of 50 cents per day. Faculty and ERD staff can rent for 14 days and pay a 20 cent late fee per day. Graduate students get a 10-day rental with a 30 cent per day late fee. No member can rent another equipment piece if they have an item overdue or owe a fee greater than 200 cents.
+
+Analysis Categories:
+
+Systems Analysis and Design
+Domain-Driven Design
+Object relationships
+Identifying Objects
+Domain model class diagram
+Class in a UML class diagram
+Relationships in domain model class diagram
+Finding classes from the problem statement
+Equipment rental system domain mode
+Domain modeling
+Implement:
+Perform analysis of the requirements from the new problem statement for the University Equipment Rental system, and create a domain model class diagram.
+
+You can now create a UML class diagram and system design based on this new requirement, while using the structure and format from your previous example.
+
+You can implement the coding and test using the technology we learned from cs489.
