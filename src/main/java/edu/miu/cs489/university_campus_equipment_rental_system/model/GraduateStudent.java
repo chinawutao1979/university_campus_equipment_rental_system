@@ -1,9 +1,7 @@
 package edu.miu.cs489.university_campus_equipment_rental_system.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +16,8 @@ public class GraduateStudent {
 
     @Id
     private String graduateStudentID;
-
+    @Column(nullable = false)
+    @NotBlank(message = "GraduateStudent's name is required. And it cannot be null, empty or blank space(s)")
     private String name;
     private String contactNumber;
 

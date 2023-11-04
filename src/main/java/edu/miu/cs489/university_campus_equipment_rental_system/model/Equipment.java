@@ -1,6 +1,7 @@
 package edu.miu.cs489.university_campus_equipment_rental_system.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,8 @@ public class Equipment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long equipmentID;
+    @Column(nullable = false)
+    @NotBlank(message = "Equipment's name is required. And it cannot be null, empty or blank space(s)")
     private String name;
     private String description;
 

@@ -38,11 +38,11 @@ public class WebApiSecurityConfig {
                         auth -> {
                             auth.requestMatchers("/api/addresses/**").permitAll()
                                     .requestMatchers("/api/equipments").hasRole("ADMIN")
-                                    .requestMatchers("/api/students").permitAll()
+                                    .requestMatchers("/api/students/**").permitAll()
                                     .requestMatchers("/api/transactions/**").permitAll()
-                                    .requestMatchers("/api/equipment-types").permitAll()
-                                    .requestMatchers("/api/faculties").permitAll()
-                                    .requestMatchers("/api/graduate-students").permitAll()
+                                    .requestMatchers("/api/equipment-types/**").permitAll()
+                                    .requestMatchers("/api/faculties/**").permitAll()
+                                    .requestMatchers("/api/graduate-students/**").permitAll()
                                     .requestMatchers("/api/manufacturers").hasRole("ADMIN")
                                     .requestMatchers("/api/erd-staff").authenticated();
                         }
