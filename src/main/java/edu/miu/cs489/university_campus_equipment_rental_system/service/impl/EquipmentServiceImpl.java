@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EquipmentServiceImpl implements EquipmentService {
@@ -22,6 +23,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     @Override
     public Equipment getEquipmentById(Long id) throws ResourceNotFoundException {
+        //Optional<Equipment> e = equipmentRepository.findByIdAndFetchAssociations(id);
         return equipmentRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Equipment not found for this id :: " + id));
     }
